@@ -18,6 +18,7 @@ if (process.env['MYSQL_URL']) {
   db_user = u.auth.split(':')[0];
   db_pass = u.auth.split(':')[1];
   db_name = u.path.substr(1);
+  console.log(""set config success!");
 }
 
 console.log("Using mysql server at: " + db_host + ":" + db_port + " as '" +
